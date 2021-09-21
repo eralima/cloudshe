@@ -1,0 +1,15 @@
+input{
+    border-radius: 20px;
+    border: 1px solid #0086ff;
+
+    padding: 5px;
+}
+
+input:focus{
+    box-shadow: 0;
+    outline: 0;
+} 
+
+::placeholder{
+    font-size: 14px;
+}
