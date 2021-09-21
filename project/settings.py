@@ -81,7 +81,8 @@ DATABASES = {
         'PORT': '3306',
         'HOST': 'localhost',
         'USER': 'root',
-        'PASSWORD': 'root',
+        'PASSWORD': '', #ALTERAÇÃO FEITA POR VITÓRIA EU TIREI A SENHA ROOT POIS O MEU BANCO NÃO TEM SENHA
+        #COLOQUE A SENHA ROOT PARA RODAR A APLICAÇÃO
     }
 }
 
