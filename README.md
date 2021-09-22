@@ -2,19 +2,10 @@
 
 Implementação de um CRUD simples utilizando banco de dados `MySQL` e linguagem `Python` com framework `Django`.
 
-<img src = "https://sites.google.com/view/django-app/in%C3%ADcio"> 
+![Django App](https://user-images.githubusercontent.com/87037883/134281946-2581ac01-650b-43f2-b88f-b1aa59167df5.png) 
 
-Através dessa aplicação web, você será capaz de realizar funções de consultas, adição, atualização, filtro e remoção de produtos de determinada empresa. 
+Através dessa aplicação web, o usuário será capaz de realizar funções de consultas, adição, atualização, filtro e remoção de produtos de determinada empresa. 
 
-## Abordagens do Projeto:
-
-* Acesso a banco de dados MySQL;
-* Uso de linguagem Python;
-* Uso do framework Django.
-
-Versão dos programas
-
-Django
 
 ## Programas utilizados:
 
