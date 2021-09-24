@@ -44,7 +44,7 @@ Marcela Medeiros
 
 Suzy Cinttra
 
-[![Linkedin Badge](https://img.shields.io/badge/-Suzinene-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/suziene-cintra-a958a61b8/)](https://www.linkedin.com/in/suziene-cintra-a958a61b8/) 
+[![Linkedin Badge](https://img.shields.io/badge/-Suziene-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/suziene-cintra-a958a61b8/)](https://www.linkedin.com/in/suziene-cintra-a958a61b8/) 
 
 ![Perfil - tropical (11)_Easy-Resize com (1)](https://user-images.githubusercontent.com/87037883/134744265-11dac482-2c3d-4f39-89f8-bf5a11c46d83.jpg)
 
