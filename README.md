@@ -42,7 +42,7 @@ Marcela Medeiros
 
 ![Perfil - tropical (10)_Easy-Resize com](https://user-images.githubusercontent.com/87037883/134744188-e16677e1-391e-4152-a341-93cb054534be.jpg)
 
-Suzy Cinttra
+Suziene Cintra
 
 [![Linkedin Badge](https://img.shields.io/badge/-Suziene-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/suziene-cintra-a958a61b8/)](https://www.linkedin.com/in/suziene-cintra-a958a61b8/) 
 
@@ -54,6 +54,6 @@ Vitória Poncio
 
 ![Perfil - tropical (8)_Easy-Resize com](https://user-images.githubusercontent.com/87037883/134744369-56290f40-1601-4ea7-a805-a4a7c30267f6.jpg)
 
-Yasmim Porto
+Yasmin Porto
 
 [![Linkedin Badge](https://img.shields.io/badge/-Yasmin-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/yasmin-porto-costa/)](https://www.linkedin.com/in/yasmin-porto-costa/) 
