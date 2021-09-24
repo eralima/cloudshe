@@ -81,11 +81,10 @@ DATABASES = {
         'PORT': '3306',
         'HOST': 'localhost',
         'USER': 'root',
-        'PASSWORD': '', #ALTERAÇÃO FEITA POR VITÓRIA EU TIREI A SENHA ROOT POIS O MEU BANCO NÃO TEM SENHA
+        'PASSWORD': 'root', #ALTERAÇÃO FEITA POR VITÓRIA EU TIREI A SENHA ROOT POIS O MEU BANCO NÃO TEM SENHA
         #COLOQUE A SENHA ROOT PARA RODAR A APLICAÇÃO
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators

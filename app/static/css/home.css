@@ -2,24 +2,81 @@
 
 *{
     font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+}
+
+button{
+    background-color: none;
+    border: none;
+}
+
+.btn{
+    border-radius: 20px;
+    font-weight: 400;
+}
+
+.btn:active,
+.btn:focus,
+.btn.active {
+    outline: 0;
+    box-shadow: none;
 }
 
 .navbar{
     background-color: #0086ff;
 }
 
-.btn{
+.btn-group button{
+    background-color: #ffffff;
+}
+
+.dropdown-item:hover{
+    background-color: #0086ff;
+    color: #ffffff;
+
     border-radius: 20px;
+}
+
+.dropdown-menu{
+    border:none;
+
+    border-radius: 20px;
+}
+
+.card{
+    border-radius: 20px;
+}
+
+.delete-btn{
+    padding: 10px 10px; 
+}
+
+.delete-btn .material-icons,
+.edit-btn .material-icons{
+    background-color: #e5e5e5;
+    padding: 6px;
+
+    border-radius: 100%;
+
+    font-size: 20px;
+    color: white;
+}
+
+.delete-btn .material-icons:hover{
+    background-color: #d93444;
+    color: white;
+}
+
+.edit-btn .material-icons:hover{
+    background-color: #ffc400;
+    color: white;
 }
 
 .card-img-top {
     width: 45px;
     height: 45px;
+    padding: 10px;
 }
-/* 
-.card {
-    background-color: blue;
-} */
 
 .card-image-wrapper{
     height: 145px;
@@ -27,5 +84,42 @@
 }
 
 .card-title{
-    color: hotpink;
+    font-size: 16px;
+    font-weight: 300;
 }
+
+.card-text{
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.card-body small{
+    background-color: #0086ff;
+
+    padding: 5px 10px 5px 10px; /* superior | direita | inferior | esquerda */
+    border-radius: 15px;
+
+    font-size: 13px;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+
+.page-item .page-link {
+    background-color: #e5e5e5;
+
+    height: 40px;
+    width: 40px;
+
+    border-radius: 100%;
+
+    color: white;
+    font-size: 16px;
+    text-align: center;
+}
+
+.page-item:last-child .page-link,
+.page-item:first-child .page-link{
+    border-radius: 100%;
+}
+
