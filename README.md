@@ -9,8 +9,17 @@ Implementação de um CRUD simples utilizando banco de dados `MySQL` e linguagem
 Através dessa aplicação web, o usuário será capaz de realizar funções de consultas, adição, atualização, filtro e remoção de produtos de determinada empresa. 
 
 
+## Programas utilizados no Front End:
 
-## Programas utilizados:
+`HTML5`
+
+`CSS3`
+
+`Bootstrap`
+
+`Javascript`
+
+## Programas utilizados no Back End:
 
 `Python 3.9.0`
 
