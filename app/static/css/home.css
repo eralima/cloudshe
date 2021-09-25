@@ -26,6 +26,16 @@ button{
     background-color: #0086ff;
 }
 
+.nav-item small{
+    font-size: 15px;
+}
+
+.nossas-empresas{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+}
+
 .btn-group button{
     background-color: #ffffff;
 }
@@ -45,10 +55,6 @@ button{
 
 .card{
     border-radius: 20px;
-}
-
-.delete-btn{
-    padding: 10px 10px; 
 }
 
 .delete-btn .material-icons,
