@@ -29,8 +29,8 @@
 
                 <ul class="navbar-nav flex-row d-none d-md-flex col-9 justify-content-center">
                     <li class="nav-item me-3 me-lg-1 col-10">
-                        <form class="d-none d-sm-flex " action="" method="GET">
-                            <input type="text" name="search" class="form-control rounded " placeholder="procure por código, nome, marca ..." />
+                        <form class="d-none d-sm-flex ">
+                            <input class="form-control rounded " placeholder="procure por código, nome, marca ..."/>
                         </form>
                     </li>
 
@@ -57,31 +57,41 @@
          <!-- barra de navegação -->
 
         <div class="container-fluid">
-
             <div class="row">
-                <form name="products-form" id="products-form" action="/createproduct/" method="post" class="col-8 m-auto ">
+                <form name="products-form" id="products-form" action="/atualizacompany/" method="post" class="col-8 m-auto ">
                     {% csrf_token %}
                     <label class="mb-2" for="nome">nome</label>
-                    <div id="nome" class="form-group mb-3" >{{productsform.nome}}</div>
+                    <div id="nome" class="form-group mb-3" >{{data.nome}}</div>
 
-                    <label class="mb-2" for="marca">marca</label>
-                    <div id="marca" class="form-group mb-3" >{{productsform.marca}}</div>
+                    <label class="mb-2" for="email">email</label>
+                    <div id="email" class="form-group mb-3" >{{data.email}}</div>
 
-                    <label class="mb-2" for="preço">preço</label>
-                    <div class="form-group mb-3" >{{productsform.preco}}</div>
+                    <label class="mb-2" for="rua">rua</label>
+                    <div id="rua" class="form-group mb-3" >{{data.rua}}</div>
 
-                    <label class="mb-2" for="quantidade-estoque">quantidade em estoque</label>
-                    <div id="quantidade-estoque" class="form-group mb-3" >{{productsform.quantidade}}</div>
-    
+                    <label class="mb-2" for="cep">cep</label>
+                    <div id="cep" class="form-group mb-3" >{{data.cep}}</div>
+                    
+                    <label class="mb-2" for="bairro">bairro</label>
+                    <div id="bairro" class="form-group mb-3" >{{data.bairro}}</div>
+
+                    <label class="mb-2" for="cidade">cidade</label>
+                    <div id="cidade" class="form-group mb-3" >{{data.cidade}}</div>
+
+                    <label class="mb-2" for="fone">fone</label>
+                    <div id="fone" class="form-group mb-3" >{{data.fone}}</div>
+
+                    <label class="mb-2" for="fone">cnpj</label>
+                    <div id="cnpj" class="form-group mb-3" >{{data.cnpj}}</div>
+
                     <div>
-                        <button type="submit" class="btn btn-outline-primary">cadastrar</button>
+                        <button type="submit" class="btn btn-outline-primary">salvar</button>
                         <a class="btn btn-outline-danger" href="/" role="button">voltar</a>
                     </div>
                     
                 </form> 
 
             </div>
-            
         </div>
 
     </main>

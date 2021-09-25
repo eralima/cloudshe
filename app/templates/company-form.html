@@ -59,20 +59,32 @@
         <div class="container-fluid">
 
             <div class="row">
-                <form name="products-form" id="products-form" action="/createproduct/" method="post" class="col-8 m-auto ">
+                <form name="products-form" id="products-form" action="{% if db %}/atualizacompany/{{ db.id }}/{% else %}/createcompany/{% endif %}" method="post" class="col-8 m-auto ">
                     {% csrf_token %}
                     <label class="mb-2" for="nome">nome</label>
-                    <div id="nome" class="form-group mb-3" >{{productsform.nome}}</div>
+                    <div id="nome" class="form-group mb-3 bg-danger" >{{companyform.nome}}</div>
 
-                    <label class="mb-2" for="marca">marca</label>
-                    <div id="marca" class="form-group mb-3" >{{productsform.marca}}</div>
+                    <label class="mb-2" for="email">email</label>
+                    <div id="email" class="form-group mb-3" >{{companyform.email}}</div>
 
-                    <label class="mb-2" for="preço">preço</label>
-                    <div class="form-group mb-3" >{{productsform.preco}}</div>
+                    <label class="mb-2" for="rua">rua</label>
+                    <div id="rua" class="form-group mb-3" >{{companyform.rua}}</div>
 
-                    <label class="mb-2" for="quantidade-estoque">quantidade em estoque</label>
-                    <div id="quantidade-estoque" class="form-group mb-3" >{{productsform.quantidade}}</div>
-    
+                    <label class="mb-2" for="cep">cep</label>
+                    <div id="cep" class="form-group mb-3" >{{companyform.cep}}</div>
+                    
+                    <label class="mb-2" for="bairro">bairro</label>
+                    <div id="bairro" class="form-group mb-3" >{{companyform.bairro}}</div>
+
+                    <label class="mb-2" for="cidade">cidade</label>
+                    <div id="cidade" class="form-group mb-3" >{{companyform.cidade}}</div>
+
+                    <label class="mb-2" for="fone">fone</label>
+                    <div id="fone" class="form-group mb-3" >{{companyform.fone}}</div>
+
+                    <label class="mb-2" for="fone">cnpj</label>
+                    <div id="cnpj" class="form-group mb-3" >{{companyform.cnpj}}</div>
+
                     <div>
                         <button type="submit" class="btn btn-outline-primary">cadastrar</button>
                         <a class="btn btn-outline-danger" href="/" role="button">voltar</a>

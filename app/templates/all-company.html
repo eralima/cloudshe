@@ -74,7 +74,16 @@
                         </div>
                         <div class="card-body">
                             <h5 class="card-title">{{dados.nome}}</h5>
-                            <p class="card-text">R$ {{dados.preco}}</p>
+                            <p class="card-text"> {{dados.email}}</p>
+                            <p class="card-text"> {{dados.rua}}</p>
+                            <p class="card-text"> {{dados.cep}}</p>
+                            <p class="card-text"> {{dados.bairro}}</p>
+                            <p class="card-text"> {{dados.cidade}}</p>
+                            <p class="card-text"> {{dados.fone}}</p>
+                            <p class="card-text"> {{dados.cnpj}}</p>
+                            <p class="card-text"> {{dados.id}}</p>
+                            <!-- O BOTÃO ESTÁ MUITO FEIO SUBSTITUIR PELO ICONE DE LAPIS -->
+                           <a class="btn btn-info ml-5" href="/editacompany/{{dados.id }}/"  role="button">Editar</a>
                         </div>
                     </div>
                 </div>
