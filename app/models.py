@@ -4,6 +4,7 @@ from django.db import models
 
 class Company(models.Model):
     nome = models.CharField(max_length=150)
+    razao_social = models.CharField(max_length=150)
     email = models.EmailField()
     rua = models.CharField(max_length=150)
     cep = models.CharField(max_length=150)

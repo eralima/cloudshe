@@ -15,9 +15,7 @@ def home (request):
         paginator = Paginator(produtosNome, 8)
         paginas = request.GET.get('pagina')
         data['bancodados'] = paginator.get_page(paginas)
-    elif search:
-        data['bancodados'] = Produtos.objects.filter(nome__icontains="")
-        messages.success(request,"Nada encontrado")
+    
     else:
         data['bancodados'] = Produtos.objects.all()
         todosProdutos = Produtos.objects.all()
@@ -31,11 +29,18 @@ def home (request):
 def showallcompany (request):
   data = {}
   search = request.GET.get('search')
-  #data['bancodados'] = Company.objects.all()
-  todasEmpresas = Company.objects.all()
-  paginator = Paginator(todasEmpresas, 8)
-  paginas = request.GET.get('pagina')
-  data['bancodados'] = paginator.get_page(paginas)
+  if search:
+      data['bancodados'] = Company.objects.filter(nome__icontains=search)
+      empresasNome = Company.objects.filter(nome__icontains=search)
+      paginator = Paginator(empresasNome, 8)
+      paginas = request.GET.get('pagina')
+      data['bancodados'] = paginator.get_page(paginas)
+  else:
+      data['bancodados'] = Company.objects.all()
+      todasEmpresas = Company.objects.all()
+      paginator = Paginator(todasEmpresas, 8)
+      paginas = request.GET.get('pagina')
+      data['bancodados'] = paginator.get_page(paginas)
   return render(request, 'all-company.html', data)
 
 def companyform (request):
@@ -91,13 +96,10 @@ def editproduct(request, pk):
 def updateproduct(request, pk):
     data = {}
     data['bancodados'] = Produtos.objects.get(pk=pk)
-    data['empresa'] = Produtos.objects.all().filter(empresa=pk)
     productsform = ProdutosForm(request.POST or None, instance=data['bancodados'])
     if productsform.is_valid():
         productsform.save()
-    else:
-        print ("deu ruim")
-    return redirect ('home')
+        return redirect('products-form')
 
 def deleteproduct(request, pk):
     db = Produtos.objects.get(pk=pk)

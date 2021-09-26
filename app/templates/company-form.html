@@ -55,19 +55,25 @@
             </div>
         </nav>
         <!-- barra de navegação -->
-        <div class="container-fluid d-flex justify-content-center mt-5">
+        <div class="container-fluid d-flex justify-content-center mt-4">
             
-            <div id="result"></div>
-
             <form name="form" id="form" action="{% if db %}/showallcompany/updatecompany/{{db.id}}/{% else %}/createcompany/{% endif %}" method="post" class="row col-md-5">
                 {% csrf_token %}
+                <div class="col-md-12 mb-2">
+                    <div id="result"></div>
+                </div>    
 
                 <div class="col-md-12 mb-2">
                     <label class="mb-1" for="nome">nome</label>
                     <div id="nome" class="form-group mb-3">{{companyform.nome}}</div>
                 </div>
 
-                <div class="col-md-12 mb-2">
+                <div class="col-md-8 mb-2">
+                    <label class="mb-1" for="razao-social">razão social</label>
+                    <div id="razao-social" class="form-group mb-3">{{companyform.razao_social}}</div>
+                </div>
+
+                <div class="col-md-4 mb-2">
                     <label class="mb-1" for="cnpj">cnpj</label>
                     <div id="cnpj" class="form-group mb-3">{{companyform.cnpj}}</div>
                 </div>

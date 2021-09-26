@@ -60,10 +60,13 @@
 
         <div class="container-fluid d-flex justify-content-center mt-4">
 
-            <form class="row g-3 col-md-5" name="form" id="form" action="{% if bancodadosempresa %}/updateproduct/{{bancodados.id}}/{% else %}/createproduct/{% endif %}"
+            <form class="row g-3 col-md-5" name="form" id="form" action="{% if bancodadosempresa %}/createproduct/{% else %}
+            /updateproduct/{{bancodados.id}}/{% endif %}"
                 method="post">
 
+                {% if bancodadosempresa %}
                 <div id="result"></div>
+                {% endif %}
 
                 {% csrf_token %}
                 <div class="col-md-12 mb-2">
@@ -72,14 +75,20 @@
                     <div class="col-md-12 mb-2">
                         <label class="form-label mb-3" for="empresa">selecione a empresa</label>
                         <select name="empresa" class="form-control">
-
-                        {% for empresa in bancodadosempresa %}
+                            {% for empresa in bancodadosempresa %}
                             <option value="{{ empresa.id }}">{{empresa.nome}}</option>
-                        {% endfor %}
-
+                            {% endfor %}
+                        </select>
+                    </div>
+                    {% else %}
+                    <div class="col-md-12 mb-2">
+                        <label class="form-label mb-3" for="empresa">selecione a empresa</label>
+                        <select name="empresa" class="form-control">
+                            <option value="{{ bancodados.empresa.id }}">{{ bancodados.empresa.nome }}</option>
                         </select>
                     </div>
                     {% endif %}
+
                 </div>
 
                 <div class="col-md-12 mb-2">
@@ -108,7 +117,11 @@
                 </div>
 
                 <div class="col-12 d-flex justify-content-center">
+                    {% if bancodadosempresa %}
                     <button type="submit" class="btn btn-outline-primary me-3">cadastrar</button>
+                    {% else %}
+                    <button type="submit" class="btn btn-outline-primary me-3">atualizar</button>
+                    {% endif %}
                     <a class="btn btn-outline-danger" href="/" role="button">voltar</a>
                 </div>
 
