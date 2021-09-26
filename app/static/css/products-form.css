@@ -1,15 +1,53 @@
-input{
-    border-radius: 20px;
-    border: 1px solid #0086ff;
-
-    padding: 5px;
+label{
+    font-weight: 500;
+    color:#0086ff;
 }
 
-input:focus{
+input{
+    padding: 5px;
+    border: none;
+    border-bottom: 1px solid #ced4da;
+
+    width: 100%;
+}
+
+input:focus,
+input:active{
     box-shadow: 0;
+    border: 0 none;
     outline: 0;
+
+    border-bottom: 1px solid #0086ff;
 } 
+
+.form-control {
+    display: block;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 400;
+
+    background-clip: padding-box;
+
+    border: 1px solid #0086ff;
+    border-radius: 0;
+
+    appearance: none;
+}
+
+.form-control:focus {
+    box-shadow: none;
+}
 
 ::placeholder{
     font-size: 14px;
 }
+
+option:hover{
+    background-color: blue;
+}
+
+
+
+
+
+

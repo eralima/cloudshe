@@ -1,0 +1,103 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <title>produtos da empresa</title>
+</head>
+
+<body>
+    <main>
+        <!-- barra de navegação -->
+        <nav class="navbar navbar-expand-lg p-3">
+            <div class="container-fluid justify-content-between">
+
+                <div class="d-flex">
+                    <a class="navbar-brand" href="/">
+                        <img src="https://tiao-a.magazineluiza.com.br/img/magalu-header.svg" alt="">
+                    </a>
+                </div>
+
+                <ul class="navbar-nav flex-row d-none d-md-flex col-9 justify-content-center">
+                    <li class="nav-item me-3 me-lg-1 col-10">
+                        <form class="d-none d-sm-flex ">
+                            <input class="form-control rounded" placeholder="procure por código, nome, marca ..." />
+                        </form>
+                    </li>
+
+                    <li class="nav-item d-flex flex-column text-white ms-3 me-lg-1">
+                        <small><b>Conheça</b></small>
+                        <small><a href="/showallcompany">nossas empresas</a></small>
+                    </li>
+                </ul>
+
+                <ul class="navbar-nav flex-row">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-outline-primary dropdown-toggle" data-bs-toggle="dropdown"
+                            data-bs-display="static" aria-expanded="false">
+                            cadastrar
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end ">
+                            <li><a class="dropdown-item" href="/company-form">empresas</a></li>
+                            <li><a class="dropdown-item" href="/products-form">produtos</a></li>
+                        </ul>
+                    </div>
+                </ul>
+            </div>
+        </nav>
+        <!-- barra de navegação -->
+
+        <div class="container">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-3 p-3 mt-2">
+
+                {% for dados in bancodados %}
+                <div class="col">
+                    
+                    <div class="card">
+                        <!-- <div class="align-self-end ms-3">
+                            <a href="deleteproduct/{{dados.id}}/" class="delete-btn btn"><i
+                                class="material-icons">delete</i></a>
+                            <a href="editproduct/{{dados.id}}/" class="edit-btn btn"><i
+                                class="material-icons">edit</i></a>
+                          </div> --> 
+                        <div class="card-image mb-2 ms-3 mt-4">
+                            <img src="{{dados.imagem_link}}" alt="">
+                        </div>
+                        <div class="card-body">
+                            <div class="row d-flex align-items-center ms-1">
+                                <small class="contato-btn col-4">empresa</small>
+                                <p class="contato-btn col-7 mt-3">{{dados.empresa.nome}}</p>
+                            </div>
+                            
+                            <h5 class="card-title mb-4">{{dados.nome}}</h5>
+                            <p class="card-text">R$ {{dados.preco}}</p>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+
+            </div>
+        </div>
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <script src="{% static 'js/home.js' %}"></script>
+
+
+</body>
+
+</html>
