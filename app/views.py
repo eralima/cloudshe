@@ -111,3 +111,27 @@ def companyproducts(request, fk):
     data = {}
     data['bancodados'] = Produtos.objects.all().filter(empresa=fk)
     return render (request, 'company-products.html', data)
+
+# def procurar(request):
+#   data = {}
+#   search = request.GET.get('search')
+#   print("o nome q eu digitei:",search)
+
+#   #colocar em uma variavel o q eu pesquisei
+#   if search:
+#     print("NOME COMPANY")
+#     data['bancodados'] = Company.objects.filter(nome__icontains = search)
+#   if search:
+#     print("NOME PROD")
+#     data['bancodados'] = Produtos.objects.filter(nome__icontains = search) 
+#   if search:
+#     print("NOME CNPJ")
+#     data['bancodados'] = Company.objects.filter(cnpj__icontains = search)  
+#   if search:
+#     print("MARCA")
+#     data['bancodados'] = Produtos.objects.filter(marca__icontains = search)
+#   else:
+#     print("entrou aqui!2")
+#     messages.success(request,"Nada encontrado")
+
+#   return render(request, 'home.html', data) 

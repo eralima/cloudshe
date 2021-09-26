@@ -15,7 +15,8 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from app.views import deletecompany, home
+
+from app.views import home
 from app.views import productsform, createproduct, editproduct, updateproduct, deleteproduct, companyproducts
 from app.views import showallcompany, companyform, createcompany, editcompany, deletecompany, updatecompany
 # from app.views import procurar

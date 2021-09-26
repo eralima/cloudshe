@@ -1,7 +1,6 @@
 from django.db import models
 
 # Create your models here.
-
 class Company(models.Model):
     nome = models.CharField(max_length=150)
     razao_social = models.CharField(max_length=150)
@@ -20,7 +19,6 @@ class Produtos(models.Model):
     quantidade = models.IntegerField()
     marca = models.CharField(max_length=150)
     empresa = models.ForeignKey(Company, on_delete=models.CASCADE, related_name='produtos')
-
 
 
 
