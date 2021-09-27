@@ -15,7 +15,7 @@ Através dessa aplicação web, o usuário será capaz de realizar funções de 
 
 `CSS3`
 
-`Bootstrap`
+`Bootstrap 5.0`
 
 `Javascript`
 
@@ -30,9 +30,12 @@ Através dessa aplicação web, o usuário será capaz de realizar funções de 
 
 ## Instalação:
 
-* ...
-* ...
-* ...
+* Pré-requisitos: ter instalado na sua máquina:mysql, um editor de texto (recomendamos o vs-code) e python.
+
+* Como rodar a aplicação: Clone este repositório
+* Acesse a pasta do projeto no terminal/cmd e vá para a pasta cloudshe,
+* Execute a aplicação o servidor entra pela porta 8000.
+
 
 `Feito com 💙 por `
 
