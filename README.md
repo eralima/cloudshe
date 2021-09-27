@@ -39,6 +39,10 @@ Através dessa aplicação web, o usuário será capaz de realizar funções de 
 
 `Feito com 💙 por `
 
+
+
+![Perfil - tropical (9)_Easy-Resize com](https://user-images.githubusercontent.com/87037883/134954655-8cb97269-9d98-49c4-91c0-7e3f119685ff.jpg)
+
 Erika Lima
 
 [![Linkedin Badge](https://img.shields.io/badge/-Erika-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/erikalmlima/)](https://www.linkedin.com/in/erikalmlima/) 
