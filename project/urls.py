@@ -39,6 +39,6 @@ urlpatterns = [
     path('showallcompany/editcompany/<int:id>/', editcompany, name='editacompany'),
     path('showallcompany/updatecompany/<int:id>/', updatecompany, name='updatecompany'),
     path('showallcompany/deletecompany/<int:id>/', deletecompany, name='deletecompany'),
-
+    path('showallcompany/companyproducts/<int:fk>/', companyproducts, name='companyproducts'),    
     # path('procurar/', procurar, name='procurar'),
 ]
